@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+ 
+ 
+ 
+ <bean id="book" class="com.org.auto.Categories" autowire="byName">
+ <property name="name" value="Science Book"/>
+ 
+ </bean>
+ 
+ <bean id="b" class="com.org.auto">
+ <property name="bookname" value="Physics Book"/>
+ <property name="bookprice" value="300Rs"/>
+ </bean>
+</beans>
