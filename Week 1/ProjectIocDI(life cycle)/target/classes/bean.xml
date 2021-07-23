@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+<bean id="student" class="com.org.web.Student"  init-method="init" destroy-method="destroy">
+	<property name="name" value="Mahe"/>
+	<property name="sCourse" ref="stdcourse"/>
+	
+</bean>
+<bean id="stdcourse" class="com.org.web.Studentcourse" >
+	<property name="course" value="SpringBoot"/>
+</bean>
+
+
+
+</beans>
